@@ -22,11 +22,23 @@
  */
 
 function countLetter(string, letter) {
-  // This is your job. :)
-}
+  let array=[];
+    for (x of string){
+    
+    if (x === letter){
+    array.push(x);
+    } else{
+
+    }
+    }
+    return array.length;
+  }
+
+
 
 if (require.main === module) {
   console.log('Running sanity checks for countLetter:');
+  console.log(countLetter('Mississipi','s'))
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
