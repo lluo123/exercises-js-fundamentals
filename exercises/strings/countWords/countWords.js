@@ -8,16 +8,14 @@
  */
 
 function countWords(string) {
-  let array =[];
-  for (x of string){
-    if (x === ' '){
-      array.push(1)
-    }
-    console.log(array)
-    return array.length +1
+  let n = 0;
+  for (let i=0; i <= string.length;i += 1) {
+   if (string[i]= " "){
+     n = n + 1;}
+    return n }
   }
   // This is your job. :)
-}
+
 
 if (require.main === module) {
   console.log('Running sanity checks for countWords:');
